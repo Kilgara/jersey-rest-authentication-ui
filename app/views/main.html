@@ -1,0 +1,20 @@
+<div class="row">
+	<div class="col-md-4">
+		<div class="list-group">
+			<a href='#/main' class="list-group-item active">Main</a>
+			<a href class="list-group-item" ng-click="logout()">Logout</a>
+		</div>
+	</div>
+	<div class="col-md-8">
+		<div class="panel panel-default" ng-repeat="message in messages">
+		 	<div class="panel-heading">
+		    	<h3 class="panel-title">{{ message.title }}</h3>
+			</div>
+		  <div class="panel-body">
+		    {{ message.message }}
+		    <br><br>
+		    {{ message.author }}
+		  </div>
+</div>
+	</div>
+</div>
